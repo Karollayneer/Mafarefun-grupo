@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/icon sem fundo.png" type="imagem/x-icon">
+    <title>Mafarefun Arte | Contate-nos</title>
+</head>
+
+<body>
+    <!--Começo da criação do menu que estará em todas as páginas-->
+    <div id="mainMenu">
+        <div class="menu1">
+            <nav class="menu" class="fixoNoTopo">
+                <a class="logo" href="index.html"><img src="imagens/icon sem fundo.png" alt="icone da loja"
+                        height="50px" width="50px"></a>
+                <ul>
+                    <li><a href="index.html">Camisas</a></li>
+                    <li><a href="Quadros.html">Quadros</a></li>
+                    <li><a href="quem-somos.html">Quem somos</a></li>
+                    <li><a class="selecionado" href="contate-nos.html">Contate-nos</a></li>
+                    <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu2">
+            <!--Icones do canto-->
+            <a href="#"><img class="animation" src="imagens/icones/icone-coração.png" alt="icone de coração"
+                    width="25px" height="25px"> </a>
+            <a href="carrinho.html"><img class="animation" src="imagens/icones/login-bolsa.png" alt="icone de compras"
+                    width="25px" height="25px"> </a>
+            <a href="login.html"><img class="animation" src="imagens/icones/login.png" alt="icone de login" width="27px"
+                    height="27px"></a>
+        </div>
+    </div>
+    <!--Fim da criação do menu-->
+
+    <div class="logoAnimado">
+        <img src="imagens/logo-animado.gif" alt="logo da marca" height="400px">
+    </div>
+    <div class="containerM">
+        <div class="container">
+            <div class="header">
+                <h2>MANDE UMA MENSAGEM!</h2>
+            </div>
+
+            <form action="https://formsubmit.co/mafarefunarte@hotmail.com" method="post" id="form" class="form">
+                <div class="form-control">
+                    <label for="nome">Nome completo</label>
+                    <input name="nome" type="text" id="username" placeholder="Digite seu nome" required/>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">E-mail</label>
+                    <input name="email" type="email" id="email" placeholder="E-mail" required/>
+                </div>
+
+                <div class="form-control">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <div class="btn">
+                <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="link-bio">
+        <div class="link-bio-img">
+            <a href="https://api.whatsapp.com/send?phone=5521999732858&text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas%20sobre%20as%20roupas!"
+                target="_blank"> <img src="imagens/whatsapp icon.png" class="animation" alt="whatsapp logo"
+                    height="70px" width="70px"></a>
+            <a href="https://www.instagram.com/mafarefunarte/" target="_blank"> <img src="imagens/instagram.png"
+                    class="animation" alt="Instagram logo" height="75px" width="100px"></a>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/715fde22b8.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

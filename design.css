@@ -1,0 +1,868 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 22px;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    min-height: 100vh;
+}
+
+/*CRIAÇÃO DO MENU */
+nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#mainMenu {
+    display: block;
+}
+
+.selecionado {
+    background-color: red;
+}
+
+.menu {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 25px;
+
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    padding: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-top: 5px;
+    transition: transform 0.8s ease-in-out;
+}
+.logo:hover {
+    transform: rotate(1turn);
+}
+
+
+.menu1 {
+    display: inline-block;
+}
+
+.menu2 {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 30px;
+    float: right;
+}
+
+.menu2 img {
+    margin-left: 9px;
+}
+
+.animation {
+    position: relative;
+    top: 0;
+}
+
+.animation:hover {
+    top: -4px;
+    transition: all .1s ease-in-out;
+}
+
+.menuTransição {
+    text-align: center;
+}
+
+@media(max-width:840px) {
+    #mainMenu {
+        display: none;
+    }
+}
+
+/*-------- FIM DO MENU CSS -----------*/
+/* ------ Barra de busca -------- */
+.divBusca {
+    display: inline-block;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 280px;
+    margin-left: 320px;
+    position: absolute;
+    top: 4%;
+    right: 10%;
+}
+
+.txtBusca {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+    text-align: center;
+
+}
+
+/* */
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.redProduct {
+    margin-bottom: 50px;
+}
+
+/*-------------------------*/
+/* Mostruario */
+.mostruario {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#slider {
+    width: 700px;
+    max-width: 700px;
+    height: 30vw;
+    max-height: 400px;
+    position: relative;
+}
+
+#slider img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 400ms;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+/*----------------Slide pagina quem somos------------------*/
+#slider1 {
+    width: 20vw;
+    height: 35vw;
+    position: relative;
+}
+
+#slider1 img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 400ms;
+}
+
+#slider1 img.selected {
+    opacity: 1;
+}
+
+/*---------------------------*/
+/*
+CARRINHO DE COMPRAS ---------------
+*/
+
+.models {
+    display: none;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgb(223, 62, 41);
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-openner {
+    margin-right: 15px;
+    font-size: 26px;
+    background-color:rgb(245, 87, 87) ;
+    padding: 5px 20px;
+    border-radius: 5px;
+
+}
+.menu-openner span {
+    margin-right: 10px;
+}
+
+.menu-closer {
+    width: 32px;
+    height: 32px;
+    display: none;
+    font-size: 30px;
+}
+
+/*Barra lateral*/
+aside {
+    background-color: rgba(255, 77, 77, 0.8);
+    width: 0vw;
+    transition: all ease .2s;
+    overflow: hidden; 
+}
+aside.show {
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.cart--area {
+    padding: 20px;
+}
+
+.models-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.models-item {
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto 50px auto;
+}
+
+.models-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*Imagem das camisas*/
+.models-item--img {
+    width: 300px;
+    height: 420px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+.models-item--img img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/*Botão de adicionar*/
+.models-item--add {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(245, 87, 87);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: -25px;
+    transition: all ease .2s;
+    border-radius: 20px;
+}
+.models-item a:hover .models-item--add {
+    background-color: rgb(194, 49, 49);;
+}
+/**/
+
+/*Preço - descrição - Nome*/
+.models-item--price {
+    font-size: 20px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.models-item--name {
+    font-size:25px;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.models-item--desc {
+    font-size: 17px;
+    color: #555;
+    margin-top: 10px;
+}
+/**/
+
+
+.modelsWindowArea {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255, 0.5);
+    display: none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.modelsWindowBody {
+    width: 900px;
+    display: flex;
+    margin: 20px 0;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px #999;
+}
+
+.modelsBig {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+
+.modelsBig--back {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+}
+
+.modelsBig img {
+    height: 400px;
+    width: auto;
+    transition: all .4s ease-in-out;
+}
+.modelsBig:hover img {
+    transform: scale(1.8);
+}
+
+
+
+.modelsInfo {
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+.modelsInfo h1 {
+    margin-top: 50px;
+}
+
+.modelsInfo .modelsInfo--desc {
+    font-size: 15px;
+    color: rgb(119, 118, 118);
+    margin-top: 10px;
+}
+
+.modelsInfo--sector {
+    color: rgb(8, 8, 8);
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.modelsInfo--sizes {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.modelsInfo--size {
+    padding: 10px 15px;
+    color: #000;
+    font-size: 20px;
+    font-weight: Bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.modelsInfo--size:hover {
+    background-color: #CCC;
+}
+
+.modelsInfo--size.selected {
+    background-color: rgb(207, 69, 69);
+    color: rgb(204, 203, 203);
+    border-radius: 2px;
+}
+
+.modelsInfo--size.selected span {
+    color: #D6D6D6;
+}
+
+.modelsInfo--size span {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+.modelsInfo--price {
+    display: flex;
+    align-items: center;
+}
+
+.modelsInfo--actualPrice {
+    font-size: 28px;
+    margin-right: 30px;
+}
+
+.modelsInfo--qtarea {
+    display: inline-flex;
+    background-color: #EEE;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.modelsInfo--qtarea button {
+    border: 0;
+    background-color: transparent;
+    font-size: 25px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0 10px;
+    color: #333;
+    border-radius: 2px;
+    transition: all ease .1s;
+}
+.modelsInfo--qtarea button:hover {
+    background-color: #CCC;
+}
+
+
+.modelsInfo--qt {
+    line-height: 30px;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0 5px;
+    color: #000;
+}
+
+.modelsInfo--addButton {
+    margin-top: 30px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgb(252, 89, 84);
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: all ease .2s;
+}
+
+.modelsInfo--addButton:hover {
+    background-color: rgb(245, 57, 32);
+}
+
+.modelsInfo--cancelButton {
+    margin-top: 30px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+.modelsInfo--cancelButton:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(197, 197, 197);
+}
+
+
+.modelsInfo--cancelMobileButton {
+    display: none;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.cart {
+    margin-bottom: 20px;
+}
+
+.cart--item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart--item img {
+    width: 70px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.cart--item-nome {
+    flex: 1;
+}
+
+.cart--item--qtarea {
+    display: flex;
+    background-color: #EEE;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.cart--item--qtarea button{
+    border: 0;
+    background-color: transparent;
+    font-size: 17px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0 10px;
+    color: #333;
+}
+
+.cart--details span{
+    font-size: 25px;
+}
+
+.cart--item--qt {
+    line-height: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 5px;
+    color:#000;
+}
+
+.cart--totalitem {
+    padding: 15px 0;
+    border-top: 1px solid rgb(187, 119, 119);
+    color: #703131;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.cart--totalitem span:first-child {
+    font-weight: bold;
+}
+
+.cart--totalitem.big {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.cart--finalizar {
+    padding: 25px 25px;
+    border-radius: 15px;
+    background-color: #ff2b2b;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid #f76363;
+    transition: all ease .2s;
+}
+
+.cart--finalizar:hover {
+    background-color: #742222;
+}
+
+@media(max-width:1000px) {
+    .models-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:840px) {
+    body {
+        flex-direction: column;
+    }
+
+    .models-area {
+        display: block;
+    }
+
+    .models-item {
+        max-width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    aside {
+       width: auto;
+       position: fixed;
+       left: 100vw;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       transition: all ease .2s; 
+    }
+
+    aside.show {
+        width: auto;
+    }
+
+    .cart--area {
+        width: 100vw;
+    }
+
+    .menu-closer {
+        display: block;
+    }
+
+    .modelsWindowArea {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .modelsWindowBody {
+        width: 100vw;
+        display: block;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .modelsBig img{
+        width: 75%;
+        height: auto;
+    }
+
+    .modelsInfo h1 {
+        margin-top: 20px;
+    }
+
+
+    .modelsInfo--qtarea {
+        height: 60px;
+    }
+
+    .modelsInfo--qtarea button {
+        font-size: 25px;
+        padding: 0 25px;
+    }
+
+    .modelsInfo--qt {
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .modelsInfo--addButton {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .modelsInfo--cancelButton {
+        display: none;
+    }
+
+    .modelsInfo--cancelMobileButton {
+        display: block;
+    }
+
+}
+
+
+
+
+/*------------------------------*/
+/*Quem somos -Texto */
+
+.quemS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 3vw;
+
+}
+
+.titulo {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.desc {
+    font-size: 30px;
+    width: 80%;
+    text-align: justify;
+    line-height: 50px;
+}
+
+/*-------------PAGINA LOGIN ----------------*/
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1 {
+    color: black;
+    font-size: 3vw;
+
+}
+.left-login-image {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(250, 52, 52);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(241, 70, 70);
+}
+
+.card-login > h1 {
+    color: rgb(48, 7, 7);;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textfield {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(247, 116, 116);
+    color: rgb(48, 7, 7);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgb(241, 70, 70);
+    font-weight: bold;
+}
+
+.textfield > label {
+    color: rgb(48, 7, 7);;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder {
+    color: white;
+}
+
+.buttom-login {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px ;
+    box-shadow: 0px 10px 40px -12px rgb(241, 70, 70);
+}
+.btn-login {
+    padding: 16px 20px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px ;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(241, 70, 70);
+    transition: background,transform .3s ease-out;
+}
+.btn-login:hover {
+    background-color: rgb(247, 116, 116);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 70%;
+    }
+}
+
+/* PAGINA DE CARRINHO DE COMPRAS EM PROGRESSO*/
+
+.carrinhoIcon {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.carrinhoIcon-text {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

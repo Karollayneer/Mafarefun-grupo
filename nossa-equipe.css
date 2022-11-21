@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(nossa-equipe/fundo.png);
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-size: cover;
+    background-position: center center;
+}
+
+nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+}
+
+#mainMenu {
+    display: block;
+}
+
+.menu {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 25px;
+
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    padding: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-top: 5px;
+    transition: transform 0.8s ease-in-out;
+}
+.logo:hover {
+    transform: rotate(1turn);
+}
+
+.menu1 {
+    display: inline-block;
+}
+
+.menu2 {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 30px;
+    float: right;
+}
+
+.menu2 img {
+    margin-left: 9px;
+}
+
+.animation {
+    position: relative;
+    top: 0;
+}
+
+.animation:hover {
+    top: -4px;
+    transition: all .1s ease-in-out;
+}
+
+.menuTransição {
+    text-align: center;
+}
+
+/*-------- FIM DO MENU CSS -----------*/
+/* ------ Barra de busca -------- */
+.divBusca {
+    display: inline-block;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 280px;
+    margin-left: 320px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.txtBusca {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+    text-align: center;
+
+}
+
+/* */
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+/*---------------------------*/
+
+.Ana{
+    display: flex;
+    border-radius:100px;
+
+}
+.Thiago {
+    display: flex;  
+    border-radius:100px;
+}
+div {
+    display: inline-block;
+}
+.Martha {
+    border-radius:100px;
+
+}
+.Philipe {
+    border-radius: 100px;  /* borda na foto*/
+
+}
+.Karolayne {
+    border-radius: 100px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.card1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.card2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+
+}
+.card1 #nomeThiago{
+    font-size: 40px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.card1 #nomeAnalice{
+    font-size: 40px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #nomeMartha{
+    font-size: 40px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card2 #nomePhilipe{
+    font-size: 40px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card2 #nomeKarol{
+    font-size: 40px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #cargoThiago{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #cargoAnalice{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #cargoMartha{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card2 #cargoPhilipe{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card2 #cargoKarol{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #cargoThiago2{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #cargoAnalice2{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #cargoMartha2{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card2 #cargoPhilipe2{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card2 #cargoKarol2{
+    font-size: 25px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+}
+.card1 #cargoThiago3{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card1 #cargoAnalice3{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card1 #cargoMartha3{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card2 #cargoPhilipe3{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card2 #cargoKarol3{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card1 #cargoThiago4{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card1 #cargoAnalice4{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card1 #cargoMartha4{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card2 #cargoPhilipe4{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.card2 #cargoKarol4{
+    font-size: 15px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+/*como comentar*/

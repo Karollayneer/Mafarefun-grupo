@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="shortcut icon" href="imagens/icon sem fundo.png" type="imagem/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Mafarefun Arte | Camisas</title>
+</head>
+
+<body>
+    <!--Começo da criação do menu que estará em todas as páginas-->
+    <div id="mainMenu">
+        <div class="menu1">
+            <nav class="menu">
+                <a class="logo" href="index.html"><img src="imagens/icon sem fundo.png" alt="icone da loja"
+                        height="50px" width="50px"></a>
+                <ul>
+                    <li><a class="selecionado" href="#gif">Camisas</a></li>
+                    <li><a href="Quadros.html">Quadros</a></li>
+                    <li><a href="quem-somos.html">Quem somos</a></li>
+                    <li><a href="contate-nos.html">Contate-nos</a></li>
+                    <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Barra de pesquisa-->
+        <div class="divBusca">
+            <input type="text" class="txtBusca" placeholder="O que você procura?">
+        </div>
+
+        <div class="menu2">
+            <!--Icones do canto-->
+            <a href="#"><img class="animation" src="imagens/icones/icone-coração.png" alt="icone de coração"
+                    width="25px" height="25px"> </a>
+            <a href="carrinho.html"><img class="animation" src="imagens/icones/login-bolsa.png" alt="icone de compras"
+                    width="25px" height="25px"> </a>
+            <a href="login.html"><img class="animation" src="imagens/icones/login.png" alt="icone de login" width="27px"
+                    height="27px"></a>
+        </div>
+    </div>
+
+    <div class="menuTransição">
+        <img src="imagens/logo-animado.gif" alt="Logo animado" height="400px">
+        <!--Fim da criação do menu-->
+        <!--Desconto gif-->
+        <img src="imagens/desconto.gif" alt="Promocao de 10% em R$150" width="100%" height="74em">
+    </div>
+
+    <!-- Moostruario animado aqui-->
+    <div class="mostruario">
+        <div id="slider">
+            <img class="selected" src="imagens/mostruario/smartmockups_la1qx0zy.jpg" alt="Foto 1 do mostruario">
+            <img src="imagens/mostruario/smartmockups_la1qxusj.jpg" alt="Foto 2 do mostruario">
+            <img src="imagens/mostruario/smartmockups_la1qzg3t.jpg" alt="Foto 3 do mostruario">
+            <img src="imagens/mostruario/smartmockups_la1r0pxh.jpg" alt="Foto 4 do mostruario">
+            <img src="imagens/mostruario/smartmockups_la1r86n4.jpg" alt="Foto 5 do mostruario">
+        </div>
+    </div>
+    <!---->
+    <img class="redProduct" id="gif" src="imagens/vermelho.gif" alt="Nossos Produtos" width="100%" height="74em">
+
+    <!--Produtos-->
+    <!-- CARRINHO ------------------------------------>
+
+    <div class="models">
+        <div class="models-item">
+            <a href="">
+                <div class="models-item--img">
+                    <img src="" alt="">
+                </div>
+                <div class="models-item--add">+</div>
+            </a>
+            <div class="models-item--price">R$ --</div>
+            <div class="models-item--name">--</div>
+            <div class="models-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" alt="">
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item-qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="menu-openner">
+            <span>0</span>
+            <span class="material-icons">shopping_cart</span>
+        </div>
+    </header>
+    <main>
+        <div class="models-area"></div>
+    </main>
+    <!-- Barra lateral com carrinho de compras-->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">
+                <span class="material-icons">close</span>
+            </div>
+            <h1>Seus produtos</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <button class="cart--finalizar">Finalizar a compra</button>
+            </div>
+        </div>
+    </aside>
+    <!--Janela de carrinho chamada ao clicar em adicionar-->
+    <div class="modelsWindowArea">
+        <div class="modelsWindowBody">
+            <div class="modelsInfo--cancelMobileButton">Voltar</div>
+            <div class="modelsBig">
+                <img src="" alt="">
+            </div>
+            <div class="modelsInfo">
+                <h1>--</h1>
+                <div class="modelsInfo--desc">--</div>
+                <div class="modelsInfo--sizearea">
+                    <div class="modelsInfo--sector">Tamanhos</div>
+                    <div class="modelsInfo--sizes">
+                        <div data-key="0" class="modelsInfo--size selected">P <span>--</span></div>
+                        <div data-key="1" class="modelsInfo--size">M <span>--</span></div>
+                        <div data-key="2" class="modelsInfo--size">G <span>--</span></div>
+                        <div data-key="3" class="modelsInfo--size">GG <span>--</span></div>
+                        <div data-key="4" class="modelsInfo--size">XGG <span>--</span></div>
+                    </div>
+                </div>
+                <div class="modelsInfo--pricearea">
+                    <div class="modelsInfo--sector">Preço</div>
+                    <div class="modelsInfo--price">
+                        <div class="modelsInfo--actualPrice">R$ --</div>
+                        <div class="modelsInfo--qtarea">
+                            <!-- Diminui ao clicar-->
+                            <button class="modelsInfo--qtmenos">-</button>
+                            <div class="modelsInfo--qt">1</div>
+                            <!-- Aumenta ao clicar-->
+                            <button class="modelsInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                <div class="modelsInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-------------->
+
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="models.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
