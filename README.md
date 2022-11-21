@@ -8,4 +8,4 @@ Equipe:
 - Karolayne Rodrigues
 - Thiago Oliveira
 
-Pages: 
+Pages: https://karollayneer.github.io/Mafarefun-grupo/
